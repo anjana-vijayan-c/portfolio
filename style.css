@@ -157,15 +157,19 @@ nav.scrolled {
 }
 
 /* Animations */
+/* Scroll-Pop Animations */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
+    transform: translateY(60px) scale(0.9);
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                opacity 0.6s ease-out;
+    visibility: hidden;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
+    visibility: visible;
 }
 
 /* Grid Layouts */
@@ -341,6 +345,7 @@ nav.scrolled {
 .skill-category:hover {
     background: var(--bg-card-hover);
     transform: translateY(-5px);
+    border-color: var(--primary);
 }
 
 .skill-category h3 {
@@ -368,15 +373,21 @@ nav.scrolled {
 
 /* Timeline Layout */
 .timeline-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .timeline-item {
     padding: 30px;
     margin-bottom: 30px;
     position: relative;
+    transition: var(--transition);
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
 }
 
 .time-marker {
@@ -405,8 +416,11 @@ nav.scrolled {
 }
 
 .project-card {
-    padding: 40px;
+    padding: 0;
+    overflow: hidden;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -414,9 +428,21 @@ nav.scrolled {
     border-color: var(--primary);
 }
 
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-content {
+    padding: 30px;
+    flex-grow: 1;
+}
+
 .project-icon {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
+    font-size: 2rem;
+    margin-bottom: 15px;
     color: var(--primary);
 }
 
@@ -479,6 +505,11 @@ nav.scrolled {
 .contact-box {
     padding: 60px;
     text-align: center;
+    transition: var(--transition);
+}
+
+.contact-box:hover {
+    border-color: var(--primary);
 }
 
 .contact-info {
