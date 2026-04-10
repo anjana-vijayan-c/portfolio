@@ -63,6 +63,14 @@ section {
     padding: var(--section-padding);
 }
 
+#education {
+    padding-bottom: 40px;
+}
+
+#certificates {
+    padding-top: 40px;
+}
+
 .section-title {
     text-align: center;
     font-size: 2.5rem;
