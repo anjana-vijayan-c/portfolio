@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjana C | Business Analyst & Digital Marketer Portfolio</title>
-    <meta name="description"
-        content="Portfolio of Anjana C, a BBA graduate specializing in Business Analytics and Digital Marketing, with expertise in Power BI, SQL, Python, and Excel. Focused on transforming data into actionable insights to support business decision-making and growth.">
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome -->
+    <title>Anjana C | Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- Background Elements -->
     <canvas id="bg-canvas"></canvas>
     <div class="floating-background">
         <div class="glow-orb orb-1"></div>
@@ -20,11 +24,10 @@
         <div class="glow-orb orb-3"></div>
     </div>
 
-
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">ANJANA</a>
+            <a href="#home" class="logo">ANJANA<span>.C</span></a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -43,30 +46,29 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <h2 class="reveal">Hello, I'm</h2>
-                <h1 class="reveal">ANJANA C</h1>
-                <h3 class="reveal">Data-Driven Business Analyst with Digital Marketing Expertise</h3>
-                <p class="reveal">Transforming complex data into actionable insights to drive informed business decisions.
-                </p>
-                <div class="hero-btns reveal">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content reveal">
+                    <h2>Hello, I'm</h2>
+                    <h1>Anjana C</h1>
+                    <h3>Data-Driven Business Analyst with Digital Marketing Expertise</h3>
+                    <p>Transforming complex data into actionable insights to drive informed business decisions.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/anjana-vijayan-c" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/anjana-vijayan-c" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=anjanavijayan212@gmail.com" target="_blank"><i
+                                class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="social-links reveal">
-                    <a href="https://github.com/anjana-vijayan-c" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/anjana-vijayan-c" target="_blank"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=anjanavijayan212@gmail.com" target="_blank"
-                        title="Email Me">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper reveal">
-                <div class="image-glass-frame">
-                    <img src="assets/profile.jpg" alt="Anjana C" class="hero-profile-img">
+                <div class="hero-image-wrapper reveal">
+                    <div class="image-glass-frame">
+                        <img src="assets/profile.jpg" alt="Anjana C" class="hero-profile-img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,15 +79,7 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>A motivated <strong>BBA graduate</strong> and aspiring professional in business and data analytics
-                    with a strong foundation in data analysis, data visualization, and business analytics. Skilled in
-                    <strong>Microsoft Excel, Power BI, Tableau, Python, and SQL</strong> for developing interactive
-                    dashboards and generating actionable insights.
-                </p>
-                <p>Proficient in data cleaning, transformation, and KPI analysis, with the ability to interpret data and
-                    support data-driven decision-making. Combines technical expertise with business understanding to
-                    identify trends, solve problems, and improve performance. Eager to apply analytical skills in a
-                    dynamic environment and contribute to organizational growth.</p>
+                <p>A motivated <strong>BBA graduate</strong> and aspiring professional in business and data analytics with a strong foundation in data analysis and visualization. Skilled in leveraging tools like <strong>Excel, Power BI, Tableau, Python, and SQL</strong> to develop interactive dashboards and generate actionable insights. Proficient in data cleaning, transformation, and KPI analysis, with a focus on supporting data-driven decision-making. I combine technical expertise with business understanding to identify trends, solve problems, and optimize performance, eager to contribute to organizational growth in a dynamic environment.</p>
             </div>
         </div>
     </section>
@@ -94,7 +88,7 @@
     <section id="skills" class="container reveal">
         <h2 class="section-title">Technical Expertise</h2>
         <div class="skills-wrapper">
-            <div class="skill-category glass reveal">
+            <div class="skill-category glass">
                 <h3><i class="fas fa-chart-line"></i> Data Analytics</h3>
                 <div class="skill-tags">
                     <span>Power BI</span>
@@ -107,7 +101,7 @@
                     <span>Google Analytics</span>
                 </div>
             </div>
-            <div class="skill-category glass reveal">
+            <div class="skill-category glass">
                 <h3><i class="fas fa-bullhorn"></i> Marketing</h3>
                 <div class="skill-tags">
                     <span>Google Ads</span>
@@ -116,7 +110,7 @@
                     <span>Digital Marketing</span>
                 </div>
             </div>
-            <div class="skill-category glass reveal">
+            <div class="skill-category glass">
                 <h3><i class="fas fa-users"></i> Soft Skills</h3>
                 <div class="skill-tags">
                     <span>Critical Thinking</span>
@@ -131,16 +125,18 @@
 
     <!-- Experience Section -->
     <section id="experience" class="container reveal">
-        <div class="timeline-container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline-item glass">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item glass reveal">
                 <div class="time-marker">Mar 2026 - Present</div>
                 <h3>Business Analyst Intern</h3>
                 <h4>Acadeno Technologies Private Limited, Kozhikode</h4>
-                <ul>
-                    <li>Data cleaning and transformation for business insights.</li>
-                    <li>Dashboard creation using Excel, Tableau, and Power BI.</li>
-                    <li>KPI tracking and visualization for leadership support.</li>
+                <ul style="color: var(--text-dim); margin-left: 20px; margin-top: 15px;">
+                    <li>Perform data cleaning, transformation, and analysis to derive actionable business insights.</li>
+                    <li>Develop and maintain interactive dashboards using Excel, Tableau, and Power BI.</li>
+                    <li>Track KPIs and create visualizations to support leadership in strategic decision-making.</li>
+                    <li>Apply Python and SQL for advanced data manipulation and analytical tasks.</li>
+                    <li>Collaborate with cross-functional teams to identify and resolve business challenges.</li>
                 </ul>
             </div>
         </div>
@@ -150,14 +146,13 @@
     <section id="projects" class="container reveal">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
-            <div class="project-card glass">
+            <div class="project-card glass reveal">
                 <img src="assets/instagram.png" alt="Instagram Dashboard" class="project-img">
                 <div class="project-content">
                     <div class="project-icon"><i class="fab fa-instagram"></i></div>
                     <h3>Instagram Performance Analysis</h3>
                     <p>Analyzed engagement metrics and content performance using Power BI to identify trends and
-                        patterns
-                        for marketing growth.</p>
+                        patterns for marketing growth.</p>
                     <div class="project-tags">
                         <span>Power BI</span>
                         <span>Data Analysis</span>
@@ -166,7 +161,7 @@
                         class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="project-card glass">
+            <div class="project-card glass reveal">
                 <img src="assets/sales.png" alt="Sales Dashboard" class="project-img">
                 <div class="project-content">
                     <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
@@ -181,21 +176,19 @@
                         class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
-            <div class="project-card glass">
+            <div class="project-card glass reveal">
                 <img src="assets/oil.png" alt="Oil Market Dashboard" class="project-img">
                 <div class="project-content">
                     <div class="project-icon"><i class="fas fa-oil-can"></i></div>
                     <h3>Oil Market Analysis</h3>
                     <p>Built an Excel-based dashboard to track price trends and market indicators, supporting
-                        data-driven
-                        decision making.</p>
+                        data-driven decision making.</p>
                     <div class="project-tags">
                         <span>MS Excel</span>
                         <span>Visualization</span>
                     </div>
                     <a href="https://github.com/anjana-vijayan-c/oil-market-dashboard.git" class="project-link">View
-                        Project
-                        <i class="fas fa-arrow-right"></i></a>
+                        Project <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -204,13 +197,15 @@
     <!-- Education Section -->
     <section id="education" class="container reveal">
         <h2 class="section-title">Education</h2>
-        <div class="timeline-container">
-            <div class="timeline-item glass">
-                <div class="time-marker"> May 2026</div>
+        <div class="timeline">
+            <div class="timeline-item glass reveal">
+                <div class="time-marker">May 2026</div>
                 <h3>Bachelor of Business Administration (BBA)</h3>
                 <h4>Yenepoya Institute of Arts Science Commerce and Management, Mangaluru</h4>
                 <p>Specialization: Business Analytics & Digital Marketing</p>
-                <p><strong>CGPA: 9.5/10</strong></p>
+                <p style="margin-top: 10px;"><strong>CGPA: 9.5/10</strong></p>
+                <p style="margin-top: 10px; color: var(--primary);"><strong>Discipline Secretary, Student Council
+                        2025-26</strong></p>
             </div>
         </div>
     </section>
@@ -219,40 +214,39 @@
     <section id="certificates" class="container reveal">
         <h2 class="section-title">Certifications & Achievements</h2>
         <div class="cert-grid">
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>NPTEL - MoE</h4>
                 <p>Business Analytics and Data Mining Modeling using R</p>
             </div>
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>Google (Coursera)</h4>
                 <p>Digital Marketing & E-commerce Specialization</p>
             </div>
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>Microsoft (Coursera)</h4>
                 <p>Work Smarter with Microsoft Excel</p>
             </div>
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>Google (Coursera)</h4>
                 <p>Attract and Engage Customers with Digital Marketing</p>
             </div>
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>FutureSkills Prime</h4>
                 <p>Generative AI Literacy (MeitY–NASSCOM)</p>
             </div>
         </div>
-        <h3
-            style="margin: 30px 0 20px; text-align: center; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-size: 2rem;">
-            Conference Presentations</h3>
+
+        <h3 class="conference-header">Conference Presentations</h3>
         <div class="cert-grid">
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>International Conference (AJIM)</h4>
                 <p>Regulating Robo-Advisors: Enhancing Investor Protection</p>
             </div>
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>National Conference (SDM)</h4>
                 <p>Bridging the Gap between Authenticity and Market Demand</p>
             </div>
-            <div class="cert-item glass">
+            <div class="cert-item glass reveal">
                 <h4>National Conference (SDM)</h4>
                 <p>The Role of IKS in Higher Education</p>
             </div>
@@ -269,28 +263,22 @@
                     <p><i class="fas fa-phone"></i> +91 9745431640</p>
                     <p><i class="fas fa-location-dot"></i> Kannur, Kerala, India</p>
                 </div>
-<<<<<<< HEAD
-                <div class="contact-btns" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="Anjana_C_resume.pdf" download class="btn btn-outline" style="margin-top: 10px;">Download
-                        Resume</a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=anjanavijayan212@gmail.com" target="_blank"
-                        class="btn btn-primary" style="margin-top: 10px;">Contact Me via Gmail</a>
-=======
                 <div class="contact-btns">
                     <a href="Anjana_C_resume.pdf" download class="btn btn-outline">Download Resume</a>
-                    <a href="https://mail.google.com/mail/?view=cm&to=anjanavijayan212@gmail.com" target="_blank" class="btn btn-primary">Contact Me via Gmail</a>
->>>>>>> a49761c (allchanges)
+                    <a href="https://mail.google.com/mail/?view=cm&to=anjanavijayan212@gmail.com" target="_blank"
+                        class="btn btn-primary">Contact Me via Gmail</a>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container" style="text-align: center; padding: 40px 0; color: var(--text-secondary);">
+        <div class="container" style="text-align: center; padding: 40px 0; color: var(--text-dim);">
             <p>&copy; 2026 Anjana C. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 
